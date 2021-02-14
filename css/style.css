@@ -1,73 +1,68 @@
+html{  background: url("img/pechene-ryba-listiki-smorodina-iagody.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: Cursive;
+  opacity: 0.92;
+  } 
+  div{
 
-  
-html{  
-  /* background: url("https://img.uxfree.com/wp-content/uploads/2018/02/warm-embers-drawing-undulating-lines-on-dark-background-in-4k.jpg"); */
-  background-color: rgb(201, 201, 201);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 100%;
-font-family: Cursive;
-margin: 2%;
-} 
-header img {
-border-radius: 50%;
-width: 200px;
-border: 2px;
-margin: 2%;
+    background: gray;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
 
-}
-h1 {
-  margin: 2%;
-  font-size: xx-large;
+  .header h2 {
+    text-align: center;
+  }
+  /* header{
+      color: white ;
+      font-size: 50px;
+      margin-left: 30%;
+  } */
 
+  div.transbox {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      }
 
-}
-h2 {
-  font-size: x-large;
-  margin: 2%;
+  div.transbox h2,label, input{
+      margin: 5%;
+      font-weight: bold;
+      font-size: 25px;
+      color: #000000;
+  }
+  footer{
+      color: rgb(0, 0, 0) ;
+      font-size: 20px;
 
-
-}
-h3{  
-  margin: 2%;
-  font-size: large;
-}
-header h1{
-  float: right;
-  margin-top:5%;
-  margin-right:50%;
-  
-}
-.progress-container {
+  }
+      
+  .progress-container {
     width: 100%;
     height: 10px;
-    background: rgb(75, 14, 12);
-
-
+    background: #ccc;
   }
 
-
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 95%;
-    color: #000;
-
+  .progress-bar {
+    height: 10px;
+    background:rgb(165, 6, 67);
+    width: 0%;
   }
-  
-  td, th {
-    border: 1px solid #000000;
-    text-align: left;
-    padding: 8px;
-    font-weight: bold;
-    background-color: #dddddd;
+  button{
+      font-weight: bold;
   }
-  
-
-  ul.list1 {
-    list-style-type: circle;
-    font-size: x-large;
-    font-weight: bold;
-
+  #burger {
+      display: none;
+      }
+  #PIZZA{
+      display: none;
 
   }
