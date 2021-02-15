@@ -93,10 +93,7 @@ function Store(storeName,min,max,avg){
         }
 
       
-    // console.log(Seattle.calCust(Seattle.min,Seattle.max));
-    // console.log(Seattle.calcookie());
-    // console.log(Seattle.getAll())
-    // Seattle.render();
+
 
     function header(){
         let trEl=document.createElement('tr');
