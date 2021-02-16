@@ -7,7 +7,7 @@ let storArr=[
     ["Lima", 2,	16	,4.6]
     ];
 let hours = ['N/H','6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-let tot = ['___', '___', '___', '___', '___', '___', '___', '___', '___', '___', '___', '___', '___', '___', '___'];
+let tot = [0, 0, 0, 0, 0, 0, 0, 0,0, 0,0, 0, 0, 0, 0];
 let totalCookis=0;
 let divEl = document.getElementById('cookies1');
 let tableEl = document.createElement('table');
@@ -25,7 +25,7 @@ function Store(storeName,min,max,avg){
 
     this.calCust();
     console.log(this);
-    this.calcookie();
+    this.calCookie();
     this.fillData();
     this.getAll()
     this.render();
@@ -42,10 +42,11 @@ function Store(storeName,min,max,avg){
 
     }
 
-    Store.prototype.calcookie =function(){
+    Store.prototype.calCookie =function(){
         for(let x =0;x<hours.length;x++){
             let p = Math.floor(((this.coustomerNum[x])*(this.avg)));
-            this.cookiesNum.push(p)   
+            this.cookiesNum.push(p);
+            tot[x-1]+= p;  
             this.sumCookis=this.sumCookis+p;
 
         }
