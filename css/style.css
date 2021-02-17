@@ -6,8 +6,8 @@ html{  background: url("img/pechene-ryba-listiki-smorodina-iagody.jpg");
   opacity: 0.92;
   } 
   div{
-
     background: gray;
+    
   }
   .header {
     position: fixed;
@@ -75,4 +75,21 @@ th,td{
     border:1px solid royalblue;
     margin-left: 10px;
     
+}
+.form1 { 
+  font-size: xx-large;
+  border: 3px solid rgb(214, 17, 17);
+  margin: 30px;
+  background-color: #ffffff; 
+}
+div.transbox h2, label, input {
+  margin:1%;
+  margin-left:  2%;
+  right: 100px;
+}
+
+div.transbox input {
+left: 0;
+
+
 }
