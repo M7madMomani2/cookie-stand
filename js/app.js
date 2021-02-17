@@ -9,6 +9,7 @@ let storArr=[
 let hours = ['N/H','6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 let tot = [0, 0, 0, 0, 0, 0, 0, 0,0, 0,0, 0, 0, 0, 0];
 let totalCookis=0;
+let totalIndex=1;
 let divEl = document.getElementById('cookies1');
 let tableEl = document.createElement('table');
 divEl.appendChild(tableEl);
@@ -39,7 +40,7 @@ function Store(storeName,min,max,avg){
             this.coustomerNum.push(randomNum(this.min,this.max));
         }
         console.log(this);
-
+        totalIndex++;
     }
 
     Store.prototype.calCookie =function(){
@@ -136,3 +137,23 @@ function Store(storeName,min,max,avg){
         let Declear =new  Store(storArr[e][0], storArr[e][1] ,storArr[e][2] ,storArr[e][3]);
         }
         footer();
+
+
+        const form = document.getElementById('Sform');
+
+        form.addEventListener('submit', storCreator)
+
+
+        function storCreator(event) {
+            event.preventDefault();
+            const storName = event.target.Sname.value;
+            let min = event.target.Smin.value;
+            let max = event.target.Smax.value;        
+            let avg = parseFloat(event.target.Savg.value);
+            tableEl.deleteRow(totalIndex);
+            let addNewStore = new Store(storName, min, max, avg);
+            footer();
+
+        
+        
+        }
