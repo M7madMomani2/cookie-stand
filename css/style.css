@@ -51,11 +51,7 @@ html{  background: url("img/pechene-ryba-listiki-smorodina-iagody.jpg");
     background: #ccc;
   }
 
-  .progress-bar {
-    height: 10px;
-    background:rgb(165, 6, 67);
-    width: 0%;
-  }
+
   button{
       font-weight: bold;
   }
