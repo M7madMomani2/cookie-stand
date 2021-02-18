@@ -10,7 +10,7 @@ html{  background: url("img/pechene-ryba-listiki-smorodina-iagody.jpg");
     
   }
   .header {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 1;
     text-align: center;
