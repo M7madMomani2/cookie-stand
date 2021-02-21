@@ -91,7 +91,7 @@ function Store(storeName,min,max,avg){
 
 
      function randomNum(min , max){
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        return (Math.floor(Math.random() * max) + min);
         }
 
       
@@ -147,11 +147,12 @@ function Store(storeName,min,max,avg){
         function storCreator(event) {
             event.preventDefault();
             const storName = event.target.Sname.value;
-            let min = event.target.Smin.value;
-            let max = event.target.Smax.value;        
+            let minNum=parseInt(event.target.mmm.value);
+            let max = parseInt(event.target.Smax.value);        
             let avg = parseFloat(event.target.Savg.value);
+            console.log(`  min ${minNum} ------------max  ${max} ----------------  `)
             tableEl.deleteRow(totalIndex);
-            let addNewStore = new Store(storName, min, max, avg);
+            let addNewStore = new Store(storName, minNum, max, avg);
             footer();
 
         
